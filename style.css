@@ -28,7 +28,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: var(--text);
-  background: var(--bg);
+  background: #f0f4ff;
 }
 
 a {
@@ -88,12 +88,12 @@ main {
 }
 
 section {
-  padding: 3.5rem 0;
+  padding: 3.5rem 2rem;
+  margin: 0 -2rem;
   border-bottom: 1px solid var(--border);
-}
-
-section > *:not(.methods-grid) {
-  position: relative;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 section:last-of-type { border-bottom: none; }
 
@@ -271,11 +271,16 @@ h2 {
 
 /* ─── Footer ────────────────────────────────────────────────── */
 footer {
+  position: relative;
+  z-index: 1;
   text-align: center;
   padding: 2rem 1.5rem;
   font-size: 0.85rem;
   color: var(--muted);
   border-top: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 /* ─── Responsive ────────────────────────────────────────────── */
